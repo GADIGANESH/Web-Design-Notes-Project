@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <!--<meta http-equiv="Content-Type"  content="text/html; charset-utf-8" />-->
+    <meta charset="utf-8">
+    <title>Unit3</title>
+    <style>
+    	 div{
+    	 	border-style: groove;
+    	 	padding: 5px;
+         border-radius: 10px;
+      }
+   .dropbtn {
+   background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: yellow;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+</style>
+</head>
+<body style="background-image:url('https://img.freepik.com/free-photo/soft-vintage-gradient-blur-background-with-pastel-colored-well-use-as-studio-room-product-presentation-banner_1258-71578.jpg?w=2000'); padding: 10px;">
+<h1 style="color:red;"><center><u>User Interactive Web Page</u></center></h1>
+<div class="dropdown" style="float:right;">
+  <button class="dropbtn">UNITS</button>
+  <div class="dropdown-content">
+ <a href="unit1.html" target="_blank">unit-1</a>
+  <a href="unit2.html" target="_blank">unit-2</a>
+  <a href="unit4.html" target="_blank">unit-4</a>
+  <a href="unit5.html" target="_blank">unit-5</a>
+  </div>
+</div>
+<div style="border-style: groove;">
+	<h2 style="color:red;">Contents:</h2>
+								<p><strong>User interactive web page:</strong> <a href="#1" style="color: white;
+                 border-style: groove;
+                 background-color: blue;
+                 border-radius: 15px;
+                 border-color:skyblue;
+                 padding: 0.3%
+                 text-decoration: none;">Form Tag</a>, <a href="#2" style="color: white;
+                 border-style: groove;
+                 background-color: blue;
+                 border-radius: 15px;
+                 border-color:skyblue;
+                 padding: 0.3%
+                 text-decoration: none;">user interactive components</a>, <a href="#3" style="color: white;
+                 border-style: groove;
+                 background-color: blue;
+                 border-radius: 15px;
+                 border-color:skyblue;
+                 padding: 0.3%
+                 text-decoration: none;">Text input controls</a>, <a href="#4" style="color: white;
+                 border-style: groove;
+                 background-color: blue;
+                 border-radius: 15px;
+                 border-color:skyblue;
+                 padding: 0.3%
+                 text-decoration: none;">Check box</a>, <a href="#5" style="color: white;
+                 border-style: groove;
+                 background-color: blue;
+                 border-radius: 15px;
+                 border-color:skyblue;
+                 padding: 0.3%
+                 text-decoration: none;">radio button</a>, <a href="#6" style="color: white;
+                 border-style: groove;
+                 background-color: blue;
+                 border-radius: 15px;
+                 border-color:skyblue;
+                 padding: 0.3%
+                 text-decoration: none;">drop down box</a>, <a href="#7" style="color: white;
+                 border-style: groove;
+                 background-color: blue;
+                 border-radius: 15px;
+                 border-color:skyblue;
+                 padding: 0.3%
+                 text-decoration: none;">submit and reset</a>.</p>
+								<p><strong>Frames: </strong> <a href="#a" style="color: white;
+                 border-style: groove;
+                 background-color: blue;
+                 border-radius: 15px;
+                 border-color:skyblue;
+                 padding: 0.3%
+                 text-decoration: none;">Importance of frames</a>, <a href="#b" style="color: white;
+                 border-style: groove;
+                 background-color: blue;
+                 border-radius: 15px;
+                 border-color:skyblue;
+                 padding: 0.3%
+                 text-decoration: none;">divide the web browser window into different sections</a>. <a href="#c" style="color: white;
+                 border-style: groove;
+                 background-color: blue;
+                 border-radius: 15px;
+                 border-color:skyblue;
+                 padding: 0.3%
+                 text-decoration: none;">Introduction to HTML5</a></p>
+</div><br>
+<div>	
+<p><strong>User interactive web page</strong></p>
+<h3 id="1" style="color: red;">Form Tag</h3>
+<p>An&nbsp;HTML form&nbsp;is&nbsp;<em>a section of a document</em>&nbsp;which contains controls such as text fields, password fields, checkboxes, radio buttons, submit button, menus etc. An HTML form facilitates the user to enter data that is to be sent to the server for processing such as name, email address, password, phone number, etc.</p>
+
+
+<p><strong>HTML Form Syntax</strong></p>
+<p>&lt;form&nbsp;action="server&nbsp;url"&nbsp;method="get|post"&gt;</p>
+<p>//input&nbsp;controls&nbsp;e.g.&nbsp;textfield,&nbsp;textarea,&nbsp;radiobutton,&nbsp;button</p>
+<p>&lt;/form&gt;</p>
+<p><strong>HTML Form Tags:</strong></p>
+<img src="https://files.speakerdeck.com/presentations/e1a2417744cd442f98d2fe747d532b1e/slide_57.jpg" width="800px" height="500px">
+<p><strong>HTML form attributes:</strong></p>
+<img src="https://slideplayer.com/slide/9288191/28/images/7/%3Cform%3E+attributes.jpg" alt="pic" width="800px" height="500px">
+</div><br>
+<div>
+<h3 id="2" style="color: red;">HTML Form Controls or User interactive components:</h3>
+<p>There are different types of form controls that you can use to collect data using HTML form &minus;</p>
+<ul>
+	<li>Text Input Controls</li>
+	<li>Checkboxes Controls</li>
+	<li>Radio Box Controls</li>
+	<li>Select Box Controls</li>
+	<li>File Select boxes</li>
+	<li>Clickable Buttons</li>
+	<li>Submit and Reset Button</li>
+</ul>
+</div><br>
+<div>
+<h3 id="3" style="color: red;">Text Input Controls</h3>
+<p>There are three types of text input used on forms &minus;</p>
+<ul>
+	<li>Single-line text input controls&nbsp;&minus; This control is used for items that require only one line of user input, such as search boxes or names. They are created using HTML&nbsp;&lt;input&gt;&nbsp;tag.</li>
+	<li>Password input controls&nbsp;&minus; This is also a single-line text input but it masks the character as soon as a user enters it. They are also created using HTMl &lt;input&gt; tag.</li>
+	<li>Multi-line text input controls&nbsp;&minus; This is used when the user is required to give details that may be longer than a single sentence. Multi-line input controls are created using HTML&nbsp;&lt;textarea&gt;&nbsp;tag.</li>
+</ul>
+
+<p><strong>Single-line text input controls:</strong></p>
+<p>This control is used for items that require only one line of user input, such as search boxes or names. They are created using HTML &lt;input&gt; tag.</p>
+<p><strong>Attributes: </strong></p>
+<ul>
+	<li>Type: Indicates the type of input control and for text input control it will be set to&nbsp;text.</li>
+	<li>Name: Used to give a name to the control which is sent to the server to be recognized and get the value.</li>
+	<li>Value: This can be used to provide an initial value inside the control.</li>
+	<li>Size: Allows to specify the width of the text-input control in terms of characters</li>
+	<li>Maxlength: Allows to specify the maximum number of characters a user can enter into the text box.</li>
+</ul>
+
+<p><strong>Password input controls:</strong></p>
+<p>This is also a single-line text input but it masks the character as soon as a user enters it. They are also created using HTML &lt;input&gt;tag but type attribute is set to&nbsp;password.</p>
+<p><strong>Attributes:</strong><img src="https://www.viralpatel.net/app/uploads/2009/09/html-textbox-label-text.png" align="right" ></p>
+<ul>
+	<li>Type: Indicates the type of input control and for text input control it will be set to&nbsp;text.</li>
+	<li>Name: Used to give a name to the control which is sent to the server to be recognized and get the value.</li>
+	<li>Value: This can be used to provide an initial value inside the control.</li>
+	<li>Size: Allows to specify the width of the text-input control in terms of characters</li>
+	<li>Maxlength: Allows to specify the maximum number of characters a user can enter into the text box.</li>
+</ul>
+
+<p><strong>Multiple-Line Text Input Controls</strong></p>
+<p>This is used when the user is required to give details that may be longer than a single sentence. Multi-line input controls are created using HTML &lt;textarea&gt; tag.</p>
+<p><strong>Attributes:</strong></p>
+<ul>
+	<li>Name: Used to give a name to the control which is sent to the server to be recognized and get the value.</li>
+	<li>Rows: Indicates the number of rows of text area box.</li>
+	<li>Cols: Indicates the number of columns of text area box</li>
+</ul>
+</div><br>
+<div>	
+<h3 id="4" style="color: red;">Checkbox Control:<img src="https://cdn.educba.com/academy/wp-content/uploads/2020/02/HTML-checkbox-Tag-3.jpg" align="right" height="200px" width="350px"></h3>
+<p>Checkboxes are used when more than one option is required to be selected. They are also created using HTML &lt;input&gt; tag but type attribute is set to&nbsp;checkbox.</p>
+<p><strong>Attributes: </strong></p>
+<ul>
+	<li><strong>Type: </strong>Indicates the type of input control and for checkbox input control it will be set to&nbsp;.</li>
+	<li><strong>Name:</strong> Used to give a name to the control which is sent to the server to be recognized and get the value.</li>
+	<li><strong>Value: </strong>The value that will be used if the checkbox is selected</li>
+	<li><strong>Checked :</strong> Set to&nbsp;<em>checked</em>if you want to select it by default.</li>
+</ul>
+</div><br>
+<div>
+<h3 id="5" style="color: red;">Radio Button Control: <img src="https://scaler.com/topics/images/radio-buttons-in-html-image-example.webp" align="right" height="200px" width="450px"></h3>
+<p>Radio buttons are used when out of many options, just one option is required to be selected. They are also created using HTML &lt;input&gt; tag but type attribute is set to&nbsp;<strong>radio</strong>.</p>
+<p><strong>Attributes:</strong></p>
+<ul>
+	<li><strong>Type : </strong>Indicates the type of input control and for checkbox input control it will be set to radio.</li>
+	<li><strong>Name: </strong>Used to give a name to the control which is sent to the server to be recognized and get the value.</li>
+	<li><strong>Value: </strong>The value that will be used if the radio box is selected.</li>
+	<li><strong>Checked: </strong>Set to&nbsp;<em>checked</em>if you want to select it by default.</li>
+</ul>
+</div>
+<div><br><br>
+<h3 id="6" style="color: red;">Select Box Control:</h3>
+<p>A select box, also called drop down box which provides option to list down various options in the form of drop down list, from where a user can select one or more options.</p>
+<p><strong>Attributes in select tag:</strong> <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjTr6YPUR6NcaBeu4CPwAwKH-ua_I3blv67D6xmREbAyNcDoiGxzcurs6_eAUIIdXTcJntthwPPCkz9s1WZLvlU3XIA5TYGdP84H9763bEcfxDfBefaj6Lk5f0M_AiXATvzPnsId1dJY7CjdMBbcQJ8xi6cu6uw6N890xguTUH1gLkp43sQBTj3gl9RoA/s1280/blogpost.jpg" align="right" height="300px" width="500px"></p>
+<p><strong>Name: </strong>Used to give a name to the control which is sent to the server to be recognized and get the value.</p>
+<p><strong>Size: </strong>This can be used to present a scrolling list box.</p>
+<p><strong>Multiple: </strong>If set to "multiple" then allows a user to select multiple items from the menu.</p>
+<p>Attributes in option tag:</p>
+<p><strong>Value</strong>: The value that will be used if an option in the select box box is selected.</p>
+<p><strong>Selected:</strong> Specifies that this option should be the initially selected value when the page loads.</p>
+<p><strong>Label: </strong>An alternative way of labeling options</p>
+
+<h3 style="color: red;">File Upload Box</h3>
+<p>If you want to allow a user to upload a file to your web site, you will need to use a file upload box, also known as a file select box. This is also created using the &lt;input&gt; element but type attribute is set to&nbsp;<strong>file</strong>.</p>
+<p><strong>Attributes:</strong></p>
+<ul>
+	<li><strong>Name</strong>: Used to give a name to the control which is sent to the server to be recognized and get the value.</li>
+	<li><strong>Accept</strong>: Specifies the types of files that the server accepts.</li>
+</ul>
+<p><strong>Example</strong>: Here is example HTML code for a form with one file upload box &ndash;</p>
+<p>&lt;!DOCTYPE html&gt;</p>
+<p>&lt;html&gt;</p>
+<p>&lt;body&gt;</p>
+<p>&lt;form&gt;</p>
+<p>&lt;input type = "file" name = "fileupload" accept = "image/*" /&gt;</p>
+<p>&lt;/form&gt;</p>
+<p>&lt;/body&gt; &lt;/html&gt;</p>
+</div><br>
+<div>
+<h3 id="7" style="color: red;">Button controls:</h3>
+<p>There are various ways in HTML to create clickable buttons. You can also create a clickable button using &lt;input&gt;tag by setting its type attribute to&nbsp;<strong>button</strong>. The type attribute can take the following values &ndash;</p>
+<p><strong>Example:</strong></p>
+<p>&lt;!DOCTYPE html&gt;</p>
+<p>&lt;html&gt;</p>
+<p>&lt;body&gt;</p>
+<p>&lt;form&gt;</p>
+<p>&lt;input type = "submit" name = "submit" value = "Submit" /&gt;</p>
+<p>&lt;input type = "reset" name = "reset" value = "Reset" /&gt;</p>
+<p>&lt;input type = "button" name = "ok" value = "OK" /&gt;</p>
+<p>&lt;input type = "image" name = "imagebutton" src = "/html/images/logo.png" /&gt;</p>
+<p>&lt;/form&gt;</p>
+<p>&lt;/body&gt;</p>
+<p>&lt;/html&gt;</p>
+<a href="https://www.w3schools.com/html/html_forms.asp">More about forms...click here</a>
+</div><br>
+<div>
+<p><strong>Frames</strong></p>
+<p>
+	HTML frames are used to divide your browser window into multiple sections where each section can load a separate HTML document.<br>
+A collection of frames in the browser window is known as a frameset. <br>
+The window is divided into frames in a similar way the tables are organized: into rows and columns.
+
+</p>
+<h3 id="a" style="color: red;">Importance of Frames</h3>
+<p>
+	It allows the user to view multiple documents within a single Web page.<br>
+It load pages from different servers in a single frameset.<br>
+The older browsers that do not support frames can be addressed using the tag
+
+</p>
+</div><br>
+<div>
+<h3 id="b" style="color:red">Creating Frames</h3>
+<p>
+	<strong>Syntax:</strong>
+	&lt;html&gt; <br>
+<br>
+&lt;head&gt;  <br>
+<br>
+         &lt;title&gt;frameset&lt;/title&gt; <br>
+<br>
+&lt;/head&gt; <br>
+<br>
+&lt;frameset&gt;   <br>
+
+&lt;frame ..................../&gt; <br>
+
+&lt;frame ..................../&gt; <br>
+
+&lt;/frameset&gt; <br>
+<br>
+&lt;/html&gt; <br>
+<br><br>
+<img src="https://www.oreilly.com/api/v2/epubs/0596009879/files/httpatomoreillycomsourceoreillyimages110663.png" alt="pic">
+ 
+</p>
+<a href="https://www.javatpoint.com/html-frame-tag">More about frames...Click here!</a>
+</div><br>
+<div>
+<h3 id="c" style="color: red;">Introduction to HTML5</h3>
+<p>
+	HTML5 is the newest version of HTML, only recently gaining partial support by the makers of the web browsers.<br>
+	<br>
+It incorporates all features from earlier versions of HTML and adds diverse set of new tools for web developer to use.<br>
+<br>
+It is still a work in progress. No browsers have full HTML5 support. It will be many years – perhaps not until 2018 or later – before being fully defined and supported.
+<br>
+</p>
+<strong>Goal of html5:</strong><br>
+<p>
+	Support all existing web pages. With HTML5, there is no requirement to go back and revise older web sites. <br>
+	<br>
+Reduce the need for external plugins and scripts to show website content.<br>
+<br>
+Improve the semantic definition (meaning and purpose) of page elements.<br>
+<br>
+Make the rendering of web content universal and independent of the device being used.<br>
+<br> 
+Handle web document errors in better and more consistent fashion.<br>
+<img src="https://cdn.icowboysradio.com/codebridgeplus/uploads/html5-new.jpg" width="800px" style="image-rendering: high-quality; image-resolution: 900dpi;">
+<img src="https://qph.cf2.quoracdn.net/main-qimg-195f79321be62cb07d02bbf4f2e8c055-pjlq" width="650px" height="550px">
+</p>
+<strong>Basic html5 code</strong>
+<p>
+	&lt;!DOCTYPE html&gt; <br>
+
+&lt;html lang=“en”&gt; <br>
+
+&lt;head&gt; <br>
+
+&lt;meta charset =“utf-8”&gt; <br>
+
+&lt;title&gt;My first HTML5 page&lt;/title&gt; <br>
+
+&lt;link rel=“stylesheet” href=“style.css”&gt; <br>
+
+&lt;/head&gt; <br>
+
+&lt;body&gt; <br>
+
+&lt;p&gt; HTML5 is fun!&lt;/p&gt; <br>
+
+&lt;/body&gt; <br>
+
+&lt;/html&gt; 
+
+ 
+</p>
+</div><br>
+</body>
+</html>
