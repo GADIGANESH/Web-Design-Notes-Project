@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> unit4</title>
+	<style type="text/css">
+			body{
+				padding: 0.5%;
+			}
+			div{
+				padding: 1%;
+			}
+			h1{ color:tomato; }
+			h2{
+				color:grey;
+				text-align: left;
+			}
+			img{
+				width: 50%;
+			}
+			.dropbtn {
+   background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: yellow;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+	</style>
+</head>
+<body style="background-image:url('https://img.freepik.com/free-photo/soft-vintage-gradient-blur-background-with-pastel-colored-well-use-as-studio-room-product-presentation-banner_1258-71578.jpg?w=2000'); padding: 10px;">
+
+<h1 id="hi"align="center" ><u>Cascading Style Sheets</u></h1>
+<div class="dropdown" style="float:right;">
+  <button class="dropbtn">UNITS</button>
+  <div class="dropdown-content">
+ <a href="unit1.html" target="_blank">unit-1</a>
+  <a href="unit2.html" target="_blank">unit-2</a>
+  <a href="unit3.html" target="_blank">unit-3</a>
+  <a href="unit5.html" target="_blank">unit-5</a>
+  </div>
+</div>
+
+<div style="border-style: groove;border-radius: 10px;padding: 10px	;">
+	<h2 id="content">Contents:</h2>
+	<a href="#1" style="background-color: blue;
+				 color: white;
+				 border-style: groove;
+				 border-radius: 15px;
+				 padding: 0.3%;
+				 text-decoration: none;
+				 border-color: skyblue;">Creating Style Sheet</a><br><br>
+	<a href="#2" style="background-color: blue;
+				 color: white;
+				 border-style: groove;
+				 border-radius: 15px;
+				 padding: 0.3%;
+				 text-decoration: none;
+				 border-color: skyblue;">CSS Properties</a><br><br>
+	<a href="#3" style="background-color: blue;
+				 color: white;
+				 border-style: groove;
+				 border-radius: 15px;
+				 padding: 0.3%;
+				 text-decoration: none;
+				 border-color: skyblue;">Types of CSS</a><br><br>
+	<a href="#4" style="background-color: blue;
+				 color: white;
+				 border-style: groove;
+				 border-radius: 15px;
+				 padding: 0.3%;
+				 text-decoration: none;
+				 border-color: skyblue;">CSS Styling</a><br><br>
+	<a href="#5" style="background-color: blue;
+				 color: white;
+				 border-style: groove;
+				 border-radius: 15px;
+				 padding: 0.3%;
+				 text-decoration: none;
+				 border-color: skyblue;">Working with block elements and objects</a><br><br>
+	<a href="#6" style="background-color: blue;
+				 color: white;
+				 border-style: groove;
+				 border-radius: 15px;
+				 padding: 0.3%;
+				 text-decoration: none;
+				 border-color: skyblue;">working with lists and tables</a><br><br>
+	<a href="#7" style="background-color: blue;
+				 color: white;
+				 border-style: groove;
+				 border-radius: 15px;
+				 padding: 0.3%;
+				 text-decoration: none;
+				 border-color: skyblue;">CSS Id and Class</a><br><br>
+	</div><br><br>
+<div style="border-style: groove;border-radius: 10px;">
+	<h2 id="1">Creating a stylesheet</h2>
+	CSS stands for Cascading Style Sheets. 
+Itis the language for describing the presentation of Web pages, including colours, layout, and fonts, thus making our web pages presentable to the users.
+
+		Here are the steps to create a CSS stylesheet:<br>
+Open a text editor such as Notepad, Sublime Text, or Atom.<br>
+Create a new file and save it with the .css file extension (e.g. "styles.css").<br>
+Write your CSS code in the file.<br>
+Link the CSS file to your HTML document by adding the following code within the &lt;head&gt; section of your HTML file:<br>
+
+&lt;link rel="stylesheet" href="styles.css"&gt;
+Save the HTML file and open it in a web browser to view the styles applied to the HTML elements.<br>
+Alternatively, you can also add CSS code directly in the HTML file by using a style tag in the head section of the HTML file.<br>
+
+Here is an example of adding CSS code in the HTML file:<br>
+&lt;head&gt;<br>
+  &lt;style&gt;<br>
+    /* CSS styles go here */<br>
+    h1 {<br>
+      color: red; <br>
+    }<br>
+  &lt;/style&gt;<br>
+&lt;/head&gt;<br>
+	<br>	
+</div><br><br>
+<div style="border-style: groove;border-radius: 10px;">
+<h2 id="2" >CSS Properties</h2><br>
+A CSS property assign a style or behavior to an HTML element.Examples : color, border.<br>
+Inline CSS has the highest priority, then comes Internal/Embedded followed by External CSS which has the least priority. Multiple style sheets can be defined on one page. If for an HTML tag, styles are defined in multiple style sheets then the below order will be followed. 
+As Inline has the highest priority, any styles that are defined in the internal and external style sheets are overridden by Inline styles.
+Internal or Embedded stands second in the priority list and overrides the styles in the external style sheet.
+External style sheets have the least priority. If there are no styles defined either in inline or internal style sheet then external style sheet rules are applied for the HTML tags.<br>
+<img src="https://static.docsity.com/documents_first_pages/2009/09/03/70283712ea506252dc562c7c0d3bb252.png">
+</div><br><br>
+<div style="border-style: groove;border-radius: 10px;">
+<h2 id="3" > Types of CSS</h2><br>
+<b>Inline CSS:</b><br>
+	      Define CSS properties using style attribute in the HTML elements.<br>
+<b>Internal CSS: </b><br>
+		 Define CSS using &lt;style&gt; tag in <head> section.<br>
+<b>External CSS:</b><br>
+		 Define all CSS property in a separate .css file, and then include the file with HTML file using tag in section.<br>
+ <img src="https://www.bitdegree.org/learn/storage/media/images/8c4493d3-110c-4a95-8b70-7626ce2d2f4e.jpg">
+</div><br><br>
+<div style="border-style: groove;border-radius: 10px;">
+<h2 id="4" >CSS Styling</h2><br>
+<b>CSS styling for background</b><br>
+The CSS background properties are used to add background effects for elements.<br>
+		1. background-color:The background-color property specifies the background color of an element.<br>
+		  <b>Example:</b><br>
+		   body{<br>
+		   	background-color:green;<br>
+		   }<br>
+		2. background-image:The background-image property specifies an image to use as the background of an element. By default, the image is repeated so it covers the entire element.
+<br>
+		  <b>Example:</b><br>
+		   body{<br>
+		   	background-image:url("google.jpg");<br>
+		   }<br>
+		3. background-attachment:The background-attachment property specifies whether the background image should "scroll" or be "fixed".
+<br>		  		  <b>Example:</b><br>
+		   body{<br>
+		   	background-image:url("google.jpg");<br>
+		   	background-attachment:scroll;
+		   }<br>		
+		   4. background-repeat:By default, the background-image property repeats an image both horizontally and vertically. 
+<br>		 <b>Example:</b><br>  body{<br>
+		   	background-image:url("google.jpg");<br>
+		   	background-repeat:no-repeat;
+		   }<br>
+		5. background-position:The background-position property is used to specify the position of the background image.
+
+<br>		 <b>Example:</b><br>  body{<br>
+		   	background-image:url("google.jpg");<br>
+		   	background-position:top left;
+		   }<br>
+<b>CSS styling for controlling fonts</b><br>
+In CSS there are five generic font families:<br>
+		Serif:fonts have a small stroke at the edges of each letter. They create 		a sense of formality and elegance.<br>
+		Sans-serif:fonts have clean lines (no small strokes attached). They 		create a modern and minimalistic look.<br>
+		      Monospace:fonts - here all the letters have the same fixed width. They create a mechanical look.<br>
+      Cursive:fonts imitate human handwriting.<br>
+      Fantasy:fonts are decorative/playful fonts.<br>
+      CSS provides several properties for styling fonts:<br>
+
+font-family: Specifies the font family to be used.<br>
+font-size: Specifies the size of the font.<br>
+font-style: Specifies the style of the font (e.g. italic).<br>
+font-weight: Specifies the weight of the font (e.g. bold).<br>
+<b>Example</b><br>
+a{<br>
+	font-family: Arial, sans-serif;<br>
+  font-size: 16px;<br>
+  font-weight: 400;<br>
+  font-style:italic;<br>
+  font-variant:small-caps;<br>
+}<br>
+</div><br><br>
+<div style="border-style: groove;border-radius: 10px;">
+<h2 id="5" > Working with block elements and Objects</h2><br>
+<b>Block-level Elements</b><br>
+A block-level element always starts on a new line, and the browsers automatically add some space (a margin) before and after the element.<br>
+
+A block-level element always takes up the full width available (stretches out to the left and right as far as it can).<br>
+
+Two commonly used block elements are: &lt;p&gt;and &lt;div&gt;.<br>
+<b>Inline Elements</b><br>
+An inline element does not start on a new line.
+An inline element only takes up as much width as necessary.Ex:&lt;span&gt;<br>
+<img src="https://dotnettutorials.net/wp-content/uploads/2021/11/word-image-453.png"><br>
+<b>CSS Object Model</b><br>
+The CSS Object Model is a set of APIs allowing the manipulation of CSS from JavaScript. It is much like the DOM, but for the CSS rather than the HTML. It allows users to read and modify CSS style dynamically. The values of CSS are represented untyped, that is using String objects.
+</div><br><br>
+<div style="border-style: groove;border-radius: 10px;">
+<h2 id="6" >Working with lists and tables</h2><br>
+To specify table borders in CSS, use the border property.
+The example below specifies a black border for &lt;table&gt;, &lt;th&gt;, and &lt;td&gt; elements:<br>
+<b>Example</b><br>
+table,th,td{<br>
+border:1px solid black;<br>
+width:50%;<br>
+}<br>
+<b>Collapse Table Borders</b><br>
+The border-collapse property sets whether the table borders should be collapsed into a single border:<br>
+table,th,td{<br>
+border-collapse:collapse;<br>
+}<br>
+<b>CSS table alignment</b><br>
+<b>horizontal alignment</b><br>
+The text-align property sets the horizontal alignment (like left, right, or center) of the content in th or td.
+By default, the content of th elements are center-aligned and the content of td elements are left-aligned.<br>
+<b>Example</b><br>
+td{<br>
+	text-align:center;<br>
+}<br>
+<b>vertical alignment</b><br>
+The vertical-align property sets the vertical alignment (like top, bottom, or middle) of the content in <th> or <td>.
+<br>
+<b>Example</b><br>
+td{<br>
+	height:50px;<br>
+	vertical-align:top;<br>
+}<br>
+<b>CSS Lists</b><br>
+In HTML, there are two main types of lists:<br>
+1.unordered lists (ul) - the list items are marked with bullets<br>
+2.ordered lists (ol) - the list items are marked with numbers or letters<br>
+
+The CSS list properties allow you to:<br>
+Set different list item markers for ordered lists<br>
+Set different list item markers for unordered lists<br>
+Add background colors to lists and list items<br>
+<b>Different List Item Markers</b><br>
+ul.a{<br>
+	list-style-type:circle;<br>
+}<br>
+ul.a{<br>
+	list-style-type:square;<br>
+}<br>
+ul.a{<br>
+	list-style-type:lower-alpha;<br>
+}<br>
+ul.a{<br>
+	list-style-type:circle<br>
+}<br>
+<img src="https://www.foxinfotech.in/wp-content/uploads/2019/04/html-lists.jpg"><br>
+</div><br><br>
+<div style="border-style: groove;border-radius: 10px;">
+<h2 id="7" >CSS Id and class</h2><br>
+<b>CSS Selectors</b><br>
+A CSS selector selects the HTML element(s) you want to style.<br>
+CSS element Selector:<br>
+		The element selector selects HTML elements based on the element name.<br>
+CSS id Selector:<br>
+		1. The id selector uses the id attribute of an HTML element to select a specific element.<br>
+		2. The id of an element is unique within a page, so the id selector is used to select one unique element.<br>
+		3. To select an element with a specific id, write a hash (#) character, followed by the id of the element.<br>
+<b>CSS class and ID</b><br>
+CSS class selector:<br>
+		1. The class selector selects HTML elements with a specific class attribute.<br>
+		2. To select elements with a specific class, write a period (.) character, followed by the class name.<br>
+CSS universal selector:<br>
+		The universal selector (*) selects all HTML elements on the page.<br>
+CSS grouping selector:<br>
+		The grouping selector selects all the HTML elements with the same style definitions.<br>
+		<b>1) CSS Element Selector</b><br>
+		The element selector selects the HTML element by name.<br>
+		<h4>Example</h4>
+		&lt;html&gt;<br>  
+&lt;head&gt;<br>  
+&lt;style&gt;<br>  
+p{  <br>
+    text-align: center;  <br>
+    color: blue;  <br>
+}   <br>
+&lt;/style&gt;<br>  
+&lt;/head&gt;<br>  
+&lt;body&gt;<br>  
+&lt;p&gt;<br>This style will be applied on every paragraph.&lt;/p&gt;<br>  
+&lt;p id="para1"&gt;<br>Me too!&lt;/p&gt;<br>  
+&lt;p&gt;<br>And me!&lt;/p&gt;<br>  
+&lt;/body&gt;<br>  
+&lt;/html&gt;<br>    
+<b>2) CSS Id Selector</b><br>
+&lt;html&gt;<br>  
+&lt;head&gt;<br>  
+&lt;style&gt;<br>  
+#para1 {  <br> 
+    text-align: center;  <br> 
+    color: blue;  <br> 
+}  <br> 
+&lt;/style&gt;<br>  
+&lt;/head&gt;<br>  
+&lt;body&gt;<br>  
+&lt;p id="para1"&gt;<br>Hello&lt;/p&gt;<br>  
+&lt;p&gt;<br>This paragraph will not be affected.&lt;/p&gt;<br>  
+&lt;/body&gt;<br>  
+&lt;/html&gt;<br>
+<b>3) CSS Class Selector</b><br>
+&lt;html&gt;<br>  
+&lt;head&gt;<br>  
+&lt;style&gt;<br>  
+.center {  //for specific element use element name before (.)<br> 
+    text-align: center;  <br> 
+    color: blue;  <br> 
+}  <br> 
+&lt;/style&gt;<br>  
+&lt;/head&gt;<br>  
+&lt;body&gt;<br>  
+&lt;h1 class="center"&gt;<br>This heading is blue and center-aligned.&lt;/h1&gt;<br>  
+&lt;p class="center"&gt;<br>This paragraph is blue and center-aligned.&lt;/p&gt;<br>   
+&lt;/body&gt;<br>  
+&lt;/html&gt;<br>
+<b>4) CSS Universal Selector</b><br>
+It is used to select all elements of the page.<br>
+&lt;html&gt;<br>  
+&lt;head&gt;<br>  
+&lt;style&gt;<br>  
+* {  <br>
+   color: green;  <br>
+   font-size: 20px;  <br>
+}   <br>
+&lt;/style&gt;<br>  
+&lt;/head&gt;<br>  
+&lt;body&gt;<br>  
+&lt;h2&gt;<br>This is heading&lt;/h2&gt;<br>  
+&lt;p&gt;<br>This style will be applied on every paragraph.&lt;/p&gt;<br>  
+&lt;p id="para1"&gt;<br>Me too!&lt;/p&gt;<br>  
+&lt;p&gt;<br>And me!&lt;/p&gt;<br>  
+&lt;/body&gt;<br>  
+&lt;/html&gt;<br>    
+<b>5) CSS Group Selector</b><br>
+Grouping selector is used to minimize the code. Commas are used to separate each selector in grouping.<br>
+&lt;html&gt;<br>  
+&lt;head&gt;<br>  
+&lt;style&gt;<br>  
+h1, h2, p {  <br>
+    text-align: center;  <br>
+    color: blue;  <br>
+}  <br>
+&lt;/style&gt;<br>  
+&lt;/head&gt;<br>  
+&lt;body&gt;<br>  
+&lt;h1&gt;<br>Hello&lt;/h1&gt;<br>  
+&lt;h2&gt;<br>Hello (In smaller font)&lt;/h2&gt;<br>  
+&lt;p&gt;<br>This is a paragraph.&lt;/p&gt;<br>  
+&lt;/body&gt;<br>  
+&lt;/html&gt;<br>  
+</div>
+</body>
+</html>
