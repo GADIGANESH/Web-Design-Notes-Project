@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--<meta http-equiv="Content-Type"  content="text/html; charset-utf-8" />-->
+    <meta charset="utf-8">
+	<title> unit5</title>
+    <style type="text/css">
+            body{
+                text-align: left;
+                padding: 1%;
+            }
+        div{
+            padding: 1%;
+        }
+        img{
+            width: 50%;
+        }
+   .dropbtn {
+   background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: yellow;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+    </style>
+</head>
+<body style="background-image:url('https://img.freepik.com/free-photo/soft-vintage-gradient-blur-background-with-pastel-colored-well-use-as-studio-room-product-presentation-banner_1258-71578.jpg?w=2000'); padding: 10px;">
+<h1 align="center" style="color:tomato;"> <u>Introduction to scripting languages(javascript and php)</u></h1>
+<div class="dropdown" style="float:right;">
+  <button class="dropbtn">UNITS</button>
+  <div class="dropdown-content">
+ <a href="unit1.html" target="_blank">unit-1</a>
+  <a href="unit2.html" target="_blank">unit-2</a>
+  <a href="unit3.html" target="_blank">unit-3</a>
+  <a href="unit4.html" target="_blank">unit-4</a>
+  </div>
+</div>
+<div style="border-style: groove;padding: 5px;border-radius: 10px;">
+	<h2 style="color:grey;">Contents:</h2>
+	<b><a href="#a1" style="color: white;
+                 border-style: groove;
+                 background-color: blue;
+                 border-radius: 15px;
+                 border-color:skyblue;
+                 padding: 0.3%
+                 text-decoration: none;">Introduction to client side and server side scripting languages</a><br><br>
+	<a href="#a2" style="color: white;
+                 border-style: groove;
+                 background-color: blue;
+                 border-radius: 15px;
+                 border-color:skyblue;
+                 padding: 0.3%
+                 text-decoration: none;">JavaScript: Variables, arrays , decision control and loop statements, Functions</a><br><br>
+	<a href="#a3" style="color: white;
+                 border-style: groove;
+                 background-color: blue;
+                 border-radius: 15px;
+                 border-color:skyblue;
+                 padding: 0.3%
+                 text-decoration: none;">Introduction to PHP Script and woriking with get and post methods</a></b><br>	<br>
+	</div>
+	<br>
+<div style="border-style: groove;padding: 5px;border-radius: 10px;">
+<h2 id="a1" style="color:grey;"> Scripting languages</h2> 
+<p>Scripting languages are programming languages that are used to write scripts, which are a series of instructions that are executed by a computer or an interpreter. They do not require the compilation step and are rather interpreted. Scripts can automate repetitive tasks, perform data manipulation, and control the behavior of other software. Some examples of common scripting languages include:<br>
+
+    JavaScript: A popular language for creating dynamic effects on websites, as well as for creating server-side applications using technologies like Node.js.<br>
+
+    Python: A general-purpose language that is widely used for web development, scientific computing, data analysis, artificial intelligence, and more.<br>
+
+    PHP: A language specifically designed for web development and server-side scripting. It is commonly used to generate dynamic web pages and connect to databases.<br>
+</p>
+<h2 style="color:grey;"> Client side and server side scripting languages</h2>	
+<p>Client-side scripting refers to the use of scripting languages, such as JavaScript, to create and control the behavior of a website on the client's browser. This means that the code is executed on the user's device used to create dynamic effects such as form validation, animations, and interactive maps.<br>
+
+Server-side scripting, on the other hand, refers to the use of scripting languages, such as PHP, Python, or Ruby, to create dynamic web pages on the server. The code is executed on the web server and generates HTML or other output that is sent to the client's browser. Server-side scripting is used for tasks such as database access, user authentication, and email sending.<br>
+
+It's also important to note that JavaScript can also be run in the server side using technologies such as Node.js, this is known as server-side JavaScript or JavaScript runtime.<br>
+
+In summary, client-side scripting is for creating dynamic effects on the client's browser and server-side scripting is for creating dynamic web pages on the server.</p>
+<img src="https://pediaa.com/wp-content/uploads/2018/10/Difference-Between-Client-Side-Scripting-and-Server-Side-Scripting-Comparison-Summary-1.jpg" align="center" width="35%x"></div><br>
+<div  style="border-style: groove;padding: 5px;border-radius: 10px;">
+	<h2 id="a2" style="color:grey;"> JavaScript</h2>
+	<p>JavaScript is an object-based scripting language which is lightweight and cross-platform.
+JavaScript is a powerful and flexible programming language. <br>It can execute on a web browser that allows us to make interactive web pages such as popup menus, animations, form validation, etc.
+	<h2 style="color:grey;"> Features of JavaScript</h2>
+	<p>
+		1.All popular web browsers support JavaScript as they provide built-in execution environments.<br>
+2.JavaScript follows the syntax and structure of the C programming language. Thus, it is a structured programming language.<br>
+3.JavaScript is an object-oriented programming language that uses prototypes rather than using classes for inheritance.<br>
+4.It is a light-weighted and interpreted language and case-sensitive language.<br>
+5.JavaScript is supportable in several operating systems including, Windows, macOS, etc.<br>
+6.It provides good control to the users over the web browsers.
+</p>
+<h2 style="color:grey;">Applications of JavaScript</h2>
+<p>JavaScript is used to create interactive websites. It is mainly used for:
+1.Dynamic drop-down menus,
+2.Displaying date and time,
+3.Displaying pop-up windows and dialog boxes (like an alert dialog box, confirm dialog box and prompt dialog box),
+<p>
+<h3>Hello world example</h3>
+&lt;script&gt;<br>
+function myFunction() {<br>
+document.write("Hello world");<br>
+}<br>
+&lt;/script&gt;<br></p>
+<h2 style="color:grey;">Java Script - Data Types</h2>
+<p>JavaScript provides different data types to hold different types of values. There are two types of data types in JavaScript.<br>
+1.Primitive data type<br>
+2.Non-primitive (reference) data type<br>
+JavaScript is a dynamic type language, means you don't need to specify type of the variable because it is dynamically used by JavaScript engine. <br>
+For example:<br>
+		var a=40;//holding number <br>
+		var b="Rahul";//holding string <br>
+		<img src="https://www.learnsimpli.com/wp-content/uploads/2019/09/javascript-data-types.png" width=45%> 
+		</p>	
+<h2 style="color:grey;">Java Script - variables</h2>
+<p>A JavaScript variable is simply a name of storage location.<br>
+There are two types of variables in JavaScript : local variable and global variable.<br>
+There are some rules while declaring a JavaScript variable (also known as identifiers).<br>
+Rules: <br>
+1.Name must start with a letter (a to z or A to Z), underscore( _ ), or dollar( $ ) sign.<br>
+2.After first letter we can use digits (0 to 9), for example value1.<br>
+3.JavaScript variables are case sensitive, for example x and X are different variables.<br>
+<b>Example:</b><br>
+&lt;script&gt;<br>
+function myFunction() {<br>
+var x=10;
+  var y=20;
+  document.write(x+y);
+}<br>
+&lt;/script&gt;<br>
+<h2 style="color:grey;">Scope of a variable</h2>
+<p>JavaScript variable is simply a name of storage location.
+There are two types of variables in JavaScript : local variable and global variable.<br>
+<b>Global variable:</b>A JavaScript global variable is accessible from any function that means declared outside the function is known as global variable.
+<b>Example:</b><br>
+&lt;script&gt;<br>
+var x=100;//global variable<br>
+function myFunction() {<br>
+  document.write(x);
+}<br>
+&lt;/script&gt;<br>
+<b>Local variable:</b>A JavaScript local variable is declared inside block or function. It is accessible within the function or block only.
+<b>Example:</b><br>
+&lt;script&gt;<br>
+function myFunction() {<br>
+var x=100;//Local variable<br>
+  document.write(x);<br>
+}<br>
+&lt;/script&gt;<br>
+<h2 style="color:grey;">Java Script - Arrays</h2>
+JavaScript arrays are used to store multiple values in a single variable. They are similar to lists in other programming languages and can contain elements of any data type, including other arrays. JavaScript arrays are dynamic, meaning they can grow or shrink in size as needed. They are also zero-indexed, which means that the first element has an index of 0, the second element has an index of 1, and so on.<br>
+There are 3 ways to construct array in JavaScript	<br>
+1.By array literal<br>
+2.By creating instance of Array directly (using new keyword) or Regular<br>
+3.By using an Array constructor (using new keyword) or C<br>
+<br>
+1)Javascript array Literal <br>
+
+Syntax: var arrayname=[valueı,valuez.....valueN];<br>
+<b>Example:</b><br>
+&lt;html&gt;<br>
+&lt;body&gt;<br>
+&lt;script&gt;<br>
+var myArr=["apple", "mango","orange"];<br>
+document.write("no of elements in array is=" +myArr.length);<br> 
+&lt;/script&gt;<br>
+&lt;/body&gt;<br>
+2)Creating array instance<br>
+	Syntax: var arrayname=new Array();<br>
+	<b>Example:</b><br>
+&lt;html&gt;<br>
+
+&lt;body&gt;<br>
+
+&lt;script&gt;<br>
+
+var myArr1=new Array(); <br>myArr[0]="apple";<br>
+
+myArr[1]= "banana";<br>
+
+myArr[2]="mango";<br>
+
+myArr[3]="orange";<br>
+
+document.write("no of elements in array is=" +myArr.length); <br>
+
+document.write("&lt;/br/&gt;");<br>
+
+&lt;/script&gt;<br>
+
+&lt;/body&gt;<br>
+3)JavaScript array constructor<br>
+  	<b>Example:</b><br>
+&lt;html&gt;<br>
+
+&lt;body&gt;<br>
+
+&lt;script&gt;<br>
+
+var myArr=new Array("apple","banana","mango","orange"); <br>
+
+document.write("no of elements in array is=" +myArr.length); <br>
+
+document.write("&lt;/br/&gt;");<br>
+
+&lt;/script&gt;<br>
+
+&lt;/body&gt;<br>
+&lt;/html&gt;<br>
+<h2 style="color:grey;">Java Script - Arrays</h2>
+In JavaScript, decision control statements are used to make decisions in the flow of a program based on certain conditions. The three main types of decision control statements are:<br>
+
+<b>1)if statement:</b> This statement is used to execute a block of code if a certain condition is true. The basic syntax is as follows:<br>
+
+if (condition) {<br>
+    // Code to be executed if condition is true<br>
+}<br>
+<b>for example</b>:<br>
+<br>
+let x = 5;<br>
+if (x > 0) {<br>
+    console.log("x is positive");<br>
+}<br>
+This will output "x is positive" in the console.<br>
+
+<b>2)if...else statement:</b> This statement is used to execute a block of code if a certain condition is true, and a different block of code if the condition is false. <br>The basic syntax is as follows:<br>
+
+
+if (condition) {<br>
+    // Code to be executed if condition is true<br>
+} else {<br>
+    // Code to be executed if condition is false<br>
+}<br>
+<b>for example</b>:<br>
+
+let x = -5;<br>
+if (x > 0) {<br>
+    console.log("x is positive");<br>
+} else {<br>
+    console.log("x is non-positive");<br>
+}<br>
+This will output "x is non-positive" in the console.<br>
+<b>3)if else if statement:</b>The if...else if statement in JavaScript allows you to chain multiple conditions together, and execute different blocks of code based on which condition is true.<br>
+The basic syntax for an if...else if statement is as follows:<br>
+<br>
+if (condition1) {<br>
+    // Code to be executed if condition1 is true<br>
+} else if (condition2) {<br>
+    // Code to be executed if condition1 is false and condition2 is true<br>
+} else if (condition3) {<br>
+    // Code to be executed if condition1 and condition2 are false and condition3 is true<br>
+} ...<br>
+else {<br>
+    // Code to be executed if none of the conditions are true<br>
+}<br>
+<b>for example</b>:<br>
+
+let x = 10;<br>
+if (x > 0 && x < 5) {<br>
+    console.log("x is between 0 and 5");<br>
+} else if (x >= 5 && x < 10) {<br>
+    console.log("x is between 5 and 10");<br>
+} else if (x >= 10) {<br>
+    console.log("x is greater than or equal to 10");<br>
+} else {<br>
+    console.log("x is less than 0");<br>
+}<br>
+This will output "x is greater than or equal to 10" in the console.<br>
+
+It's important to note that, as soon as a true condition is found, the corresponding block of code will be executed and the rest of the conditions will be skipped.
+
+You can chain as many else if statements as you need, depending on the complexity of your decision-making logic.<br>
+<h2 style="color:grey;">Java Script - Loops</h2><br>
+JavaScript has three types of loop statements that allow you to repeat a block of code multiple times, they are:<br>
+
+<b>for loop:</b> This loop is used to iterate a specific number of times. The basic syntax is as follows:<br>
+
+for (initialization; condition; update) {<br>
+    // Code to be executed<br>
+}<br>
+<b>For example:</b><br>
+
+for (let i = 0; i < 5; i++) {<br>
+    document.write(i);<br>
+}<br>
+This will output the numbers 0 through 4 in the console.<br>
+
+<b>while loop: </b>This loop is used to repeat a block of code as long as a certain condition is true. The basic syntax is as follows:<br>
+
+while (condition) {<br>
+    // Code to be executed<br>
+}<br>
+<b>For example:</b><br>
+let i = 0;<br>
+while (i < 5) {<br>
+    document.write(i);<br>
+    i++;<br>
+}<br>
+This will output the numbers 0 through 4 in the console.<br>
+
+<b>do...while loop:</b> This loop is similar to the while loop, but the code inside the loop is executed at least once, and then the condition is checked. The basic syntax is as follows:<br>
+
+do {<br>
+    // Code to be executed<br>
+} while (condition);<br>
+<b>For example:</b><br>
+
+let i = 0;<br>
+do {<br>
+    document.write(i);<br>
+    i++;<br>
+} while (i < 5);<br>
+This will output the numbers 0 through 4 in the console.<br>
+<h2 style="color:grey;">Java Script - Functions</h2>
+JavaScript functions are used to perform operations. We can call JavaScript function many times to reuse the code.
+Advantages:<br>
+	1. code reusability<br>
+   2. less coding<br>
+Function syntax:<br>
+         functionfunctionName([arg1,arg2,...argN])<br>
+         {<br>
+                //code to be executed<br>
+                //return statement
+         }<br>
+    <b>Example:</b><br>
+    &lt;html&gt;<br>
+
+&lt;body&gt;<br>
+
+&lt;script&gt;<br>
+
+function msg(num){<br>
+
+alert(num*num);}<br>
+
+&lt;/script&gt;<br>
+
+&lt;input type="button" onclick="getsquare(4)" value="click to display"/&gt;<br>
+
+&lt;/body&gt;<br>
+
+&lt;/html&gt;<br>
+<b>Function Object Example:</b><br>
+    &lt;html&gt;<br>
+
+&lt;body&gt;<br>
+
+var add=new Function add("n1","n2","return n1+n2");//function object <br>
+document.write(add(2,5);
+
+&lt;/body&gt;<br>
+
+&lt;/html&gt;<br>
+
+<b>A java script to print addition of two numbers:</b><br>
+
+&lt;html&gt;<br>
+&lt;head&gt;<br>
+&lt;script&gt;<br>
+function add()<br>
+{<br>
+  var numOne, numTwo, sum; <br>
+  numOne = parseInt(document.getElementById("first").value); <br>
+  numTwo = parseInt(document.getElementById("second").value); <br>
+  sum = numOne + numTwo; <br>
+  document.getElementById("answer").value = sum; <br>
+}<br>
+&lt;/script&gt;<br>
+&lt;/head&gt;<br>
+&lt;body&gt;<br>
+
+&lt;p&gt;<br>Enter the First Number: &lt;input id="first"&gt;<br>&lt;/p&gt;<br>
+&lt;p&gt;<br>Enter the Second Number: &lt;input id="second"&gt;<br>&lt;/p&gt;<br>
+&lt;button onclick="add()"&gt;<br>Add&lt;/button&gt;<br>
+&lt;p&gt;<br>Sum = &lt;input id="answer"&gt;<br>&lt;/p&gt;<br>
+
+&lt;/body&gt;<br>
+&lt;/html&gt;<br>
+<b>java script form validation</b><br>
+<img src="https://sarthaksrivastavablog.files.wordpress.com/2018/05/h5.png" width="35%">
+</p>
+</div><br>
+<div style="border-style: groove;padding: 5px;border-radius: 10px;">
+<h2 id="a3" style="color:grey;"> Introduction to PHP</h2>	
+PHP (Hypertext Preprocessor) is a server-side scripting language used to create dynamic web pages. It is commonly used in combination with HTML, CSS, and JavaScript to create websites and web applications. PHP code is executed on the server, and the result is sent to the browser as plain HTML. PHP is an open-source language and is widely supported by web hosting providers. It is also commonly used with databases such as MySQL to create dynamic, data-driven websites.<br>
+PHP 5 Syntax<br>
+You can place your PHP script, anywhere in an HTML document. All PHP script must start with <?php and ends with ?>. In other words all PHP script must be placed inside <?php and ?>. Here is the general form of a PHP script:<br>
+
+&lt;?php<br>
+   // PHP code goes here<br>
+?&gt;<br>
+And to run the PHP script or PHP code in your browser, you must have to save the file ending with .php extension, and if you save the file ending with other than .php, that is, if you save the file ending with .html or .htm then all the content along with <?php, echo, and ?> etc. will be printed in the browser.<br>
+
+Therefore after writing PHP code, when you save the code in file with any name, then must put .php at the end of that file.<br>
+
+PHP Syntax Example<br>
+Let's take an example to understand how PHP code can be written.<br>
+
+	&lt;?php <br>
+   echo "&lt;p&gt;";This is the way to write any PHP code.&lt;/p&gt;";<br>
+   echo "&lt;/p&gt;";Open browser and type localhost/filename.php&lt;/p&gt;";<br>
+?&gt;<br>
+<b>List of data types supported by PHP are:</b>
+
+integer
+,float (also called as double),
+string,
+array,
+boolean,
+NULL,
+object.<br>
+<b>Example integer:</b><br>
+		&lt;?php <br>
+		echo gettype(5);//Output:integer<br>	
+?&gt;<br>
+<b>Example array:</b><br>
+		&lt;?php <br>
+		 $x = array("Python", 32, "PHP");<br>
+   echo var_dump($x);//Output: array(3){[0]=>string(6)"Python" [1]=>int(32)[2] =>string(3)"PHP"}<br>
+?&gt;<br>
+<b>Example object:</b><br>
+		&lt;?php <br>
+		   class myClass{<br>
+   }<br>
+   $x = new myClass();<br>
+   echo gettype($x);//Output:object<br>
+?&gt;<br>
+
+<b>PHP Variables:</b><br>
+Variables in PHP is basically a single or a combination of characters, followed by a $ sign, used to store information. Therefore we can also say that, variables are the containers, used to store information. For example:<br>
+		&lt;?php <br>
+		 $x = "hello";<br>
+   echo "$x";<br>	
+?&gt;<br>
+<b> Decision making statements in PHP:</b><br>
+ 1. if statement<br>
+ 2.if else statement<br>
+ 3.if else if statement<br>
+ <b>Example:</b><br>
+ <img src="https://ictacademy.com.ng/wp-content/uploads/2017/10/php-if-else-elseif-statements.png"><br>
+ <b>Control staements in PHP</b><br>
+ There are three types of loops in php<br>
+ 1.for loop<br>
+ 2.while loop<br>
+ 3.do-while loop<br>
+ <b>Example printing table of 12 using loops</b><br>
+ &lt;?php<br>
+   $num = 12;<br>
+   echo "Table of $num using for Loop&lt;BR&gt;";<br>
+   for($i=1; $i&lt;=10; $i++)<br>
+   {<br>
+      echo $num*$i;<br>
+      echo "&lt;BR&gt;";<br>
+   }<br>
+   
+   echo "&lt;HR&gt;";<br>
+   
+   echo "Table of $num using while Loop&lt;BR&gt;";<br>
+   $i=1;<br>
+   while($i&lt;=10)<br>
+   {<br>
+      echo $num*$i;<br>
+      echo "&lt;BR&gt;";<br>
+      $i++;<br>
+   }<br>
+   
+   echo "&lt;HR&gt;";<br>
+   
+   echo "Table of $num using do-while Loop&lt;BR&gt;";<br>
+   $i=1;<br>
+   do<br>
+   {<br>
+      echo $num*$i;<br>
+      echo "&lt;BR&gt;";<br>
+      $i++;<br>
+   }while($i&lt;=10);<br>
+?&gt;<br>
+<b>PHP GET and POST</b><br>
+There are two ways available in PHP, that the browser client can send the information to the web server, which are:<br>
+
+1.GET Method<br>
+2.POST Method<br>
+The $_GET and $_POST variables are used to retrive information from forms like user input.<br>
+<b>Example:</b><br>
+A HTML form with input feilds<br> 
+&lt;html&gt;<br>
+&lt;body&gt;<br>
+&lt;form action=”welcome.php” method=”post”&gt;<br>
+Name:&lt;input type=”text” name=”fname”&gt;<br>
+Age:&lt;input type=”text” name=”age”&gt;<br>
+&lt;input type=”submit” value=”submit”&gt;<br>
+&lt;/form&gt;<br>
+&lt;/body&gt;<br>
+&lt;/html&gt;<br>
+<b>welcome.php</b><br>
+&lt;html&gt;<br>
+&lt;body&gt;<br>
+Welcome&lt;? php<br>
+ echo $_POST[“fname”]; <br>
+?&gt;<br>
+Your age&lt;?php<br>
+Echo $_POST[“age”];<br>
+?&gt;<br>
+&lt;/body&gt;<br>
+&lt;/html&gt;<br>
+<img src="https://4.bp.blogspot.com/-CaBXhGu-DZI/XB8x0MzPhVI/AAAAAAAACf0/BKGaGFZ-8rovSKi6qOvq2VVxatn85M2vACLcBGAs/s1600/Screenshot%2B%2528238%2529.png"><br><br>
+<b>$_REQUEST variable</b><br>
+The predefined $_REQUEST contains the content of $_GET, $_POST and $_COOKIE. $_REQUEST variable can be used to collect form data sent with both GET and POST Methods.<br>
+</div>
+</body>
+</html>
